@@ -1,0 +1,32 @@
+<table width="100%" cellspacing="0" cellpadding="0" border=0>
+	<tr align="center">
+	<td>
+        
+	<form action="<field>F_HTML_FIREWALL</field>online" method=POST>
+		<!-- comment: remove the comment from the next line if you want languages on web pages -->
+		<!-- comment: #include virtual="TMtemplates/tmnavLanguages.html" -->
+
+      
+	  <field>pick(F_LOGGED_IN=1,'<!-- comment: trick. if not logged on, next 3 buttons dont show','')</field>
+	  <input name="btnHome" type="submit" class="btn" id="btnHome" value="What's New">
+	  <input name="btnAccount" type="submit" class="btn" id="btnAccount" value="Account">
+      <input name="btnMailList" type="submit" class="btn" id="btnMailList" value="Mail Lists">
+
+	  <field>pick(F_LOGGED_IN=1,'-->','')</field>
+	  <field>pick(F_LOGGED_IN=2,'<!-- comment: and if not logged on, show login button','')</field>
+	  <input name="btnLogin" type="submit" class="btn" id="btnLogin" value="Login">
+	  <field>pick(F_LOGGED_IN=2,'-->','')</field>
+      <input name="btnGetEventList" type="submit" class="btn" id="btnGetEventList" value="Tickets">
+      <input name="btnSubscription" type="submit" class="btn" id="btnSubscription" value="Subscriptions">
+      <input name="btnPass" type="submit" class="btn" id="btnPass" value="Gift Certificates">
+      <input name="btnDonation" type="submit" class="btn" id="btnDonation" value="Donations">
+      <input name="btnCart" type="submit" class="btn" id="btnCart" value="Shopping Cart">
+      <input name="btnCheckout" type="submit" class="btn" id="btnCheckout" value="Checkout">
+      <input name="btnLogout" type="submit" class="btn" id="btnLogout" value="Logout">
+    </form>
+	</td>
+	</tr>
+</table>
+
+        <!-- comment: not available yet in version   Place after the mail list button when done 8:
+        input name="btnGetVolunteerList" type="submit" class="btn" id="btnGetVolunteerList" value="Volunteers" -->
