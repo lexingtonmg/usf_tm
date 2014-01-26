@@ -42,3 +42,10 @@
 .bs-callout-info h4 {
   color: #34789a;
 }
+
+footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
