@@ -18,7 +18,25 @@
   </div>
 
   <div class="row">
+    
     <div class="col-md-4">
+      <form role="form" ACTION="<field>F_HTML_FIREWALL</field>online" METHOD=POST>
+        <div class="form-group">
+          <label for="e">Email</label>
+          <INPUT class="form-control" id="e" NAME=e TYPE=text VALUE="<field>F_EMAIL_ADDRESS</field>" SIZE=30>
+        </div>
+        <div class="form-group">
+          <label for="p">Password</label>
+          <INPUT class="form-control" TYPE=Password id="p" NAME="p" VALUE="" size=20 maxlength=20 autocomplete=off>
+        </div>
+        <input type=submit name="btnLoginAccount" value="Login"  class="btn btn-default">
+        <input type=hidden name="C_SEQ" value="<field>C_SEQ</field>">
+        <input type=hidden name=param value="<field>F_HTML_PARAMETER</field>">
+      </form>
+  </div>
+  
+
+  <div class="col-md-8">
       <div class="bs-callout bs-callout-info">
         <field>F_HTML_PAGE_MESSAGE</field>
       </div>
@@ -50,23 +68,8 @@
         </div>
       </form>
 
+    </div>
 
-    </div>
-    <div class="col-md-8">
-      <form role="form" ACTION="<field>F_HTML_FIREWALL</field>online" METHOD=POST>
-        <div class="form-group">
-          <label for="e">Email</label>
-          <INPUT class="form-control" id="e" NAME=e TYPE=text VALUE="<field>F_EMAIL_ADDRESS</field>" SIZE=30>
-        </div>
-        <div class="form-group">
-          <label for="p">Password</label>
-          <INPUT class="form-control" TYPE=Password id="p" NAME="p" VALUE="" size=20 maxlength=20 autocomplete=off>
-        </div>
-        <input type=submit name="btnLoginAccount" value="Login"  class="btn btn-default">
-        <input type=hidden name="C_SEQ" value="<field>C_SEQ</field>">
-        <input type=hidden name=param value="<field>F_HTML_PARAMETER</field>">
-      </form>
-    </div>
   </div>
 
 </div><!-- .container -->
